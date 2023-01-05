@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color.js Prototype 01</title>
+    <!--  -->
+<style>
+root {
+--colorspace-rgb: srgb;
+--colorspace-oklch: srgb;
+
+}
+.my-element {
+  background: oklch(45% 0.26 264);
+}
+</style>
+
+</head>
+<body>
+    <div class="my-element"><p>oklch(0.866 0.295 142.5)</p></div>
+</body>
+<script src="https://colorjs.io/dist/color.global.js"></script>
+
+<script>
+let color4 = new Color("lch(50% 80 30)");
+
+color(display-p3 0 1 0 / 0.9)
+
+let color = new Color("slategray");
+
+// Multiple coordinates
+color.set({
+	"lch.l": 80, // set lightness to 80
+	"lch.c": c => c * 1.2 // Relative manipulation
+});
+
+let color1 = new Color("oklch", [1, 0, 187]);
+color1.oklch.l = 0;
+color1.oklch.c = 0;
+color1.oklch.h = 349;
+color1.toString();
+print(color1);
+
+oklch(0.866 0.295 142.5)
+
+</script>
+</html>
